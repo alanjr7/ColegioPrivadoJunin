@@ -1,0 +1,289 @@
+/* styles.css */
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+}
+i{
+    margin-top: 10px;
+}
+
+/* Header */
+header {
+    background-color:#FFDB00;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+a{
+    background-color: #FFF5E1;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #26355D;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FF8F00;
+}
+
+/* Logo */
+.logo {
+    width: 10%;
+    height: auto;
+}
+div .titulo{
+    width: 100%;
+}
+.titulo{
+background-color: #0000005e;
+
+
+
+}
+/* Section Styles */
+section {
+    padding: 10%;
+    padding-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+section h1, section p {
+    margin: 0;
+   
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mision-vision{
+background-image: url(recursos/img3.jpg);
+color:black;
+
+}
+/* Specific Sections */
+#inicio, .contacto {
+ 
+    padding-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contacto {
+    text-align: center;
+    display: flex;
+    background:#FF8F00;
+}
+
+.negro {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+#historia{
+background-color: antiquewhite;
+
+
+}
+/* Background Image Section */
+.foto {
+    background-image: url('recursos/historia.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    opacity: 1.5;
+}
+
+/* Images */
+img {
+    height: 10%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section .logo {
+    background-image: url('recursos/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+/* Buttons */
+button {
+    background:#3b9ad7;
+    font-family:'Lato, sans-serif';
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 18PX;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 4px;
+}
+.btn2{
+background-color: #00000028;
+color: #333;
+
+}
+button:hover {
+    background: #ffffff;
+    color: #0cf2fa;
+}
+
+button:before, button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before, button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+/* Informacion Section */
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.informacion div {
+    width: 283px; /* Adjust the width and height as needed */
+    height: 305px;
+    padding: 3px;
+    font-family: cursive;
+    margin: auto;
+}
+.c1{
+background-color: #ffbf75;
+text-align: center;
+
+}
+.c2{
+background-color: #68a8ad;
+}
+.c3{
+    background-color: #6c8672;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+#psp img{
+height: 50px;
+width: 50px;
+
+}
+footer p {
+    margin: 0.5rem 0;
+}
+/*contador*/
+.container {
+   margin: 0%;
+   margin-bottom: 1%;
+    justify-content:center;
+   align-items: center;
+    text-align: center;
+    color: #333;
+    display:flex;
+}
+.box{
+margin-left: 20px;
+
+
+}
+.counter {
+    font-size: 4rem;
+    color: #0041f5;
+    margin-top: 1rem;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+
+    .informacion {
+        flex-direction: column;
+    }
+    .foto{
+        height: auto;
+        display: block;
+flex-direction: column;
+
+    }
+    .container{
+        display: block;
+        flex-direction: column;
+    }
+}
